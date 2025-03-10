@@ -1,0 +1,135 @@
+body{
+    background-color: azure;
+    font-family: Arial, sans-serif;
+}
+.headers-div{
+    display: grid;
+    grid-template-columns: 0.3fr 0.4fr 0.3fr;
+    background-color: #333;
+    justify-content: center;
+    padding: 15px;
+}
+.logo{
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: azure;
+}
+.cit {
+    text-align: right;
+}
+.privacy-policy p{
+    text-align: left;
+    margin-left: 300px;
+    color: #555;
+}
+.privacy-policy a{
+    text-decoration: none;
+    color: #007bff;
+    transition: 0.4s;
+}
+.privacy-policy h3{
+    text-align: left;
+    margin-left: 300px;
+    color: #333;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    margin-left: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.main-div-left-side{
+    display: grid;
+    grid-template-columns: 0.1fr 0.9fr;
+}  
+.catalog-filter{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    height: 100%;
+    width: 100%;  
+    background-color: azure;
+    border: #333 1px solid;
+}
+.catalog-tag{
+    display: grid;
+    height: 100%;
+    width: 100%;  
+    background-color: azure;
+    border: #333 1px solid;
+    grid-template-rows: repeat(5, 1fr);
+    width: 100%;
+}
+.catalog-tag a{
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    transition: 0.4s;
+}
+.catalog-tag a:hover{
+    background-color: #333;
+    color: azure;
+}
+
+.catalog-availability{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;  
+    border: #333 1px solid;
+}
+.main-div{
+    display: grid;
+    grid-template-columns: 0.1fr 0.7fr 0.2fr;
+}
+.main-div-center-side {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+.main-div-right-cide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+footer{
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+footer a{
+    text-decoration: none;
+    color: rgb(136, 81, 81);
+    transition: 0.4s;
+}
+footer a:hover{
+    color: rgb(116, 69, 69);
+}
+/*1366x768*/
+@media (max-width: 1366px) {
+    .main-div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .div-left-side{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .main-div-center-side{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
