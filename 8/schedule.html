@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>schedule</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Не лечим но излечим душевно</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="all_doctor.html">Все доктора</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="headers">
+            <a href="auth.html">Войти</a>
+            <a href="registration.html">Регистрация</a>
+    </header>
+    <main>
+        <div class="schedule">
+            <div class="tabel">
+                <table>
+                    <thead>
+                        <th>Доктор</th>
+                        <th>Понедельник</th>
+                        <th>Вторник</th>
+                        <th>Среда</th>
+                        <th>Четверг</th>
+                        <th>Пятница</th>
+                        <th>Суббота</th>
+                        <th>Воскресенье</th>
+                    <tbody style="background-color: rgba(7, 202, 202, 0.438);">
+                        <th>Андрей</th>
+                        <th>8:00 - 18:00</th>
+                        <th>8:00 - 18:00</th>
+                        <th>8:00 - 18:00</th>
+                        <th>8:00 - 18:00</th>
+                        <th>8:00 - 18:00</th>
+                        <th>8:00 - 18:00</th>
+                        <th></th>
+                    </tbody>
+                    <tbody style="background-color: rgba(127, 255, 212, 0.63);">
+                        <th>Коля</th>
+                        <th>8:00 - 18:00</th>
+                        <th>8:00 - 18:00</th>
+                        <th>8:00 - 18:00</th>
+                        <th>8:00 - 18:00</th>
+                        <th></th>
+                        <th></th>
+                        <th>9:00 - 16:00</th>
+                    </tbody>
+                    <tbody style="background-color: rgba(123, 63, 179, 0.575);">
+                        <th>Вадим</th>
+                        <th></th>
+                        <th>9:00 - 20:00</th>
+                        <th>9:00 - 20:00</th>
+                        <th>9:00 - 20:00</th>
+                        <th>9:00 - 20:00</th>
+                        <th></th>
+                        <th></th>
+                    </tbody>
+                    <tbody style="background-color: rgba(42, 145, 145, 0.479);">
+                        <th>Ульяна</th>
+                        <th></th>
+                        <th>9:00 - 20:00</th>
+                        <th>9:00 - 20:00</th>
+                        <th>9:00 - 20:00</th>
+                        <th>9:00 - 20:00</th>
+                        <th></th>
+                        <th></th>
+                    </tbody>
+                    <tbody style="background-color: rgba(165, 86, 240, 0.541);">
+                        <th>Борис</th>
+                        <th></th>
+                        <th>9:00 - 20:00</th>
+                        <th>9:00 - 20:00</th>
+                        <th>9:00 - 20:00</th>
+                        <th>9:00 - 20:00</th>
+                        <th></th>
+                        <th>8:00 - 18:00</th>
+                    </tbody>
+                    <tbody style="background-color: rgba(204, 61, 61, 0.555);">
+                        <th>Вовчик</th>
+                        <th>9:00 - 20:00</th>
+                        <th>9:00 - 20:00</th>
+                        <th>9:00 - 20:00</th>
+                        <th></th>
+                        <th>9:00 - 16:00</th>
+                        <th></th>
+                        <th>9:00 - 16:00</th>
+                    </tbody>
+                    </thead>
+                </table>
+            </div>
+        <div class="right">
+            <div class="labels">
+                <div class="label">
+                    <h3>Записатся на прием</h3>
+                    <label class="label-for-rewiew" for="selectID"></label>
+                    <label for="username">Выребите доктора</label><select id="selectID" name="rewiew-doctor" class="rewiewForm">
+                        
+                    <option value='' hidden>Выберите доктора</option>
+                        <option value="{{$key}}">Андрей</option>
+                        <option value="{{$key}}">Коля</option>
+                        <option value="{{$key}}">Вадим</option>
+                        <option value="{{$key}}">Ульяна	</option>
+                        <option value="{{$key}}">Борис</option>
+                        <option value="{{$key}}">Вовчик</option>
+                    </select>
+                    <br>
+                    <label for="username">Выберите дату</label> <input id="date" type="date" value="2017-06-01" />
+                    <br>
+                    <label for="username">Выребите время</label> <input type="time" id="username" />
+                    <br>
+                    <label for="username">Имя</label><input type="name" id="username"/>
+                    <br>
+                    <label>Номер телефона</label><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                    <br>
+                    <button>Записатся на прием</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+    <footer>
+        <P>&copy; 2025 TrendBay. <a href="#">Все права защищены.</a></P>
+     </footer>
+</body>
+</html>
