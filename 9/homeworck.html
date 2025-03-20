@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Домашние задания</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .nav-link { color: white; }
+        .profile-icon { width: 40px; height: 40px; border-radius: 50%; }
+        .card { padding: 15px; }
+        .bg-overdue { background-color: #f8d7da; }
+        .bg-review { background-color: #17a2b8; color: white; }
+        .bg-reviewed { background-color: #28a745; color: white; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary p-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <a class="nav-link" href="homeworck.html">Homework</a>
+            <a class="nav-link" href="setings.html">Settings</a>
+            <img src="img/1.png" alt="Profile" class="profile-icon">
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <h3 class="text-center">Homework</h3>
+        
+        <h4>JavaScript</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <h5>Loops</h5>
+                    <p>10/05/2019</p>
+                    <input type="file" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-review">
+                    <h5>Conditional statements</h5>
+                    <p>08/05/2019</p>
+                    <button class="btn btn-light">Your file</button>
+                    <button class="btn btn-light">Remove</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-review">
+                    <h5>Variables</h5>
+                    <p>05/05/2019</p>
+                    <button class="btn btn-light">Your file</button>
+                    <button class="btn btn-light">Remove</button>
+                </div>
+            </div>
+        </div>
+        
+        <h4 class="mt-4">HTML & CSS</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-overdue">
+                    <h5>Adaptive layout</h5>
+                    <p>29/04/2019</p>
+                    <input type="file" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-overdue">
+                    <h5>Grid Layout</h5>
+                    <p>27/04/2019</p>
+                    <input type="file" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-reviewed">
+                    <h5>Flexbox</h5>
+                    <p>24/04/2019</p>
+                    <button class="btn btn-light">Your file</button>
+                    <button class="btn btn-light">Resend</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
